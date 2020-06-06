@@ -1,20 +1,21 @@
 ---
-invoice-nr: 2015-11-04
-author: Max Mustermann
-city: Musterstadt
-from:
+invoice-nr: 1
+
+from: Max Mustermann
+from-abn: 30 111 111 111
+from-address:
 - Musterstraße 37
 - 12345 Musterstadt
-to:
-- Erika Mustermann
+
+to: Erika Mustermann
+to-address:
 - Musterallee 1
 - 12345 Musterstadt
 - Germany
-VAT: 20
+
 service:
 - description: The first service provided
   price: 320.00
-  details:
 - description: And another one, with a list of details
   price: 245.00
   details:
@@ -23,6 +24,17 @@ service:
     - Looking good
 - description: The last service provided
   price: 65.00
+  details: details
+
+# Invoice settings
+currency: AUD
+tax: 20
+
+# Typography and layout
+seriffont: Hoefler Text
+sansfont: Helvetica Neue
+fontsize: 10pt
+geometry: a4paper, left=43mm, right=43mm, top=51mm, bottom=17mm
 
 closingnote: |
   Please transfer the due amount to the following bank account within the next 14 days:
@@ -36,15 +48,4 @@ closingnote: |
 
     Best regards,
 
-# Invoice settings
-currency: EUR
-# commasep: true
-lang: english
-
-# Typography and layout
-seriffont: Hoefler Text
-sansfont: Helvetica Neue
-fontsize: 10pt
-geometry: a4paper, left=43mm, right=43mm, top=51mm, bottom=17mm
-# letterhead: true # To include personalized letterheads
 ---
