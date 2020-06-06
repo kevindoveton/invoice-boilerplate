@@ -1,3 +1,11 @@
+This is a fork of [mrzool/invoice-boilerplate](https://github.com/mrzool/invoice-boilerplate).
+It differs by:
+- Moving the to/from section into a column layout
+- Including an automatically generated due date
+- Including INVOICE at the top
+- Including a section for ABNs
+- Bolds the to/from name
+
 # Invoice Boilerplate
 
 Simple automated LaTeX invoicing system for freelancers.
